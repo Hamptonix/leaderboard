@@ -1,3 +1,9 @@
 very simple leader board
 
-combined.html has all languages in one script, if you wish to seperate the languages, use all the other files besides combined.html
+If you want to have all languages in one script use:
+-combined.html
+
+If you want to seperate the languages use:
+-main.html
+-style.css
+-scripts.js
