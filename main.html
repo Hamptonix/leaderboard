@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Score Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Leaderboard</h1>
+
+        <!-- Leaderboard Table -->
+        <div id="leaderboard">
+            <table id="player">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Player rows will be added dynamically here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Form to Add New Player -->
+        <form>
+            Player Name: <input type="text" name="FirstName" id="player_name"><br>
+            Player Score: <input type="number" name="LastName" id="player_score"><br>
+            <input type="button" onclick="submitData()" value="Submit"/>
+        </form>
+
+        <!-- Modify Player Points Section -->
+        <div id="modify-player-points">
+            <h2>Modify Player Points</h2>
+            <div class="actions">
+                Player Name:
+                <input type="text" id="modify_player_name" placeholder="Enter player name">
+                Points:
+                <input type="number" id="points_input" placeholder="Enter points">
+                <button onclick="modifyPoints()">Modify Points</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
